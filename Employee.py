@@ -1,4 +1,3 @@
-from curses.ascii import EM
 from random import randrange
 
 
@@ -49,18 +48,18 @@ emp_1.fullname = 'Katthy nguyen'
 print(emp_1.fullname)
 del emp_1.fullname
 # inheritated
-# class Manager(Employee):
-#     def __init__(self, first, last, pay,like):
-#         # super.__init__(first, last, pay)        
-#         Employee.__init__(self,first,last,pay)
-#         self.like = like
+class Manager(Employee):
+    def __init__(self, first, last, pay,like):
+        # super.__init__(first, last, pay)        
+        Employee.__init__(self,first,last,pay)
+        self.like = like
 
 
 # # print(help(Manager))
-# ma = Manager('ji','hin',60,56)
-# # print(ma.email)
-# # print(ma.fullname())
-# # print(ma.__dict__)
-# # print(ma.like)
+ma = Manager('ji','hin',60,56)
+print(ma.email)
+print(ma.fullname())
+print(ma.__dict__)
+# print(ma.like)
 
 # print(emp_1)
