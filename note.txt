@@ -1,0 +1,80 @@
+ Python và PEP 8
+
+1. Naming conventions (quy tắc đặt tên)
+               Các cú pháp thông dụng: ***
+    *** camelCase (Cú pháp lạc đà): 
+        -> firstName, doSomething...
+    *** PascalCase(Cú phaprs Pascal ):
+        -> FirstName, MyFirstLover...
+    *** snake_case (con ran):
+        -> first_name, do_something...
+2. Python  :  PascalCase và snake_case
+    *** tên class: PascalCase :(MyFirstClass) -> cụm danh từ:
+    *** tên function: snake_case:  calculate_age, do_something ->động từ hoặc cụm động từ
+    *** tên biến: snake_case:age, service_provided : danh từ hoặc cụm danh từ
+    *** tên hằng số: đặt theo UPPER_CASE: ENGLISH, PER_PAGE
+
+3. Blank lines (Dòng trống)
+*** Các function trong cùng một class cách nhau một dòng trống
+---------------------------------------------
+class MyClass:
+    def do_first_thing(self):
+        return True
+        
+    def do_second_thing(self):
+        return True
+---------------------------------------------
+
+*** Các class, function không cùng một class cách nhau hai dòng trống
+---------------------------------------------
+class MyFirstClass:
+    pass
+    
+
+class MySecondClass:
+    pass
+    
+
+def do_first_thing():
+    return True
+
+---------------------------------------------
+*** Sử dụng các dòng trống bên trong các function để chia thành các blocks code
+---------------------------------------------
+def calculate_age(members_list):
+    name_list = []
+    age_list = []
+
+    for member in members_list:
+        name_list.append(member.full_name)
+        age_list.append(member.age)
+        
+    if name_list:
+        pass
+    else:
+        pass
+    
+    if age_list:
+        pass
+    else:
+        pass
+
+---------------------------------------------
+*** Tối đa hóa độ dài dòng và ngắt dòng
+    ->PEP 8 gợi ý các dòng nên được giới hạn ở 79 ký tự
+---------------------------------------------
+def do_something(arg_one, arg_two
+                 arg_three, arg_four):
+    return True
+
+---------------------------------------------
+    -> Hoặc có thể sử dụng dấu gạch chéo để ngắt dòng:
+---------------------------------------------
+from my_package import first_module, \
+    second_module, third_module
+
+---------------------------------------------
+
+        
+
+
